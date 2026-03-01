@@ -21,7 +21,7 @@ RunMode = input(" \n You  are always asked further to run time consuming individ
 "\n Please enter the benchmark mode in for all 3 strategies you can not choose to run individual file later\n" \
 "\n WRITE only (press 1)->Enter," \
 "\n READ only (press 2)," \
-"\n BOTH modes(press 3), " \
+"\n BOTH modes(press 3),If there is no file written automatic switching to both modes but indiv files only written after confirmation " \
 "\n FULL( press 4(Includes automatic testin for individual files may take upto 20 mins) and BOTH modes)\n" \
 "\nEnter from 1 , 2 , 3 , 4   ").strip().lower()    # "write", "read", "both"
 FullRun = False
