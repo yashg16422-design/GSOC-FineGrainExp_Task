@@ -1,0 +1,19 @@
+
+/single/
+/chunked/
+/individual/
+/data/
+
+
+*.tmp
+cache_flush.tmp
+
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
