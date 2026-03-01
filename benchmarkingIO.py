@@ -41,8 +41,8 @@ def data_exists_and_not_empty():
     if not os.path.exists(ChunkedDir) or not os.listdir(ChunkedDir):
         return False
 
-    # if not os.path.exists(IndividualDir) or not os.listdir(IndividualDir):
-    #     return False
+    if not os.path.exists(IndividualDir) or not os.listdir(IndividualDir):
+        return False
 
     return True
 def measure_time(func, *args):
@@ -175,13 +175,13 @@ def main():
 
     print("#Individual File Strategy...")
 
-    # if RunMode in ("1", "3"):
-    #     _, t_write = measure_time(
-    #         individual.write,
-    #         records,
-    #         IndividualDir
-    #     )
-    #     print(f"Write time        : {t_write:.4f} seconds")
+    if RunMode in ("1", "3"):
+        _, t_write = measure_time(
+            individual.write,
+            records,
+            IndividualDir
+        )
+        print(f"Write time        : {t_write:.4f} seconds")
 
     if RunMode in ("2", "3"):
         _, t_seq = measure_time(
